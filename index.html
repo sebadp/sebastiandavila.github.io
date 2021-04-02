@@ -57,11 +57,16 @@
     <div class="container text-center my-auto">
       <h1 class="mb-1">Sebastián Dávila </h1>
       <h3 class="mb-5">
-        <em>BackEnd Web Developer</em>
+        <em id="title_txt">Backend Web Developer</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Español</a>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" target="_blank"  href="https://drive.google.com/file/d/13_0wXsC6lLd3NpENjbedOtwiP7Pbsb-M/view?usp=sharing">Resumé</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" id="btn_findOutMore" href="#about">Find Out More</a><br> <br>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" target="_blank"  href="https://drive.google.com/file/d/13_0wXsC6lLd3NpENjbedOtwiP7Pbsb-M/view?usp=sharing">Resumé</a> 
+      <a class="btn btn-primary btn-xl js-scroll-trigger translate" id="es_btn" >Traducir</a>
+    </div>
+    <div>
+      <!-- <a class="btn btn-primary btn-xl js-scroll-trigger translate" id="en" href="#about">English</a> -->
+     
+
     </div>
     <div class="overlay"></div>
   </header>
@@ -71,12 +76,13 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2>About Me</h2>
-          <p class="lead mb-5">I provide Web solutions in Python-Django and Javascript environments. <br> Open to learn new tecnologies, frameworks and metodologies. Highly motivated and well organised. <br>
+          <h2 id="title_aboutMe">About Me</h2>
+          <p class="lead mb-5" id="txt_main">I provide Web solutions in Python-Django and Javascript environments. <br> Open to learn new tecnologies, frameworks and metodologies. Highly motivated and well organised. <br>
             I can listen with empathy, make diagnoses, propose solutions and carry them out. <br> Comfortable working as part of a team or independently. <br> 
            Passionate about technology and programming since always. <br> Currently looking for a permanent job with a team to work in an Agile environment.   </p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What I Offer</a>
-        </div>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn_whatIOffer" href="#services">What I Offer</a>
+         
+                 </div>
       </div>
     </div>
   </section>
@@ -85,15 +91,15 @@
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
       <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Services</h3>
-        <h2 class="mb-5">What I Offer</h2>
+        <h3 class="text-secondary mb-0" id="title_services">Services</h3>
+        <h2 class="mb-5" id="title_whatIOffer">What I Offer</h2>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fab fa-python"></i>
           </span>
-          <h4>
+          <h4 id="title_competencies">
             <strong>Competencies</strong>
           </h4>
           <p class="text-faded mb-0">    • Communication: <br>
@@ -108,7 +114,7 @@
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fab fa-js-square 8x"></i>
           </span>
-          <h4>
+          <h4 id="title_experience">
             <strong>Experience</strong>
           </h4>
           <p class="text-faded mb-0">
@@ -125,7 +131,7 @@
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fab fa-js-square 8x"></i>
           </span>
-          <h4>
+          <h4 id="title_skills">
             <strong>Skills</strong>
           </h4>
           <p class="text-faded mb-0">   
@@ -141,7 +147,7 @@
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fab fa-linux "></i>
           </span>
-          <h4>
+          <h4 id="title_mainTools">
             <strong>Main Tools</strong>
           </h4>
           <p class="text-faded mb-0">
@@ -158,16 +164,15 @@
       
     </div>
     <br><br>
-    <a class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio">My recent work</a>
+    <a class="btn btn-light btn-xl js-scroll-trigger" id="btn_myRecentWork" href="#portfolio">My recent work</a>
   </section>
-
 
   <!-- Portfolio -->
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+        <h3 class="text-secondary mb-0" id="title_portfolio">Portfolio</h3>
+        <h2 class="mb-5" id="title_recentProyects">Recent Projects</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
@@ -220,7 +225,7 @@
     </div>
     <div class="content-section-heading text-center">
       <br><br>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#app">Contact me</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" id="btn_contactMe" href="#app">Contact me</a>
     </div>
   </section>
 
@@ -243,7 +248,7 @@
   <!-- Callout -->
   <section class="callout">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">Contact Me</h2>
+      <h2 class="mx-auto mb-5" id="title_contactMe">Contact Me</h2>
       
     <div id="app" style="padding-top: 8rem;">
       <div class="container">
@@ -277,7 +282,7 @@
                   </textarea>
               </div>
               <div class="col-sm-6 col-sm-offset-3 text-center">
-                  <button @click="enviar" class="btn btn-primary btn-xl">
+                  <button @click="enviar" id="btn_send" class="btn btn-primary btn-xl">
                       Send
                   </button>
               </div>
@@ -362,6 +367,76 @@
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
 
+  <script>
+    const es_btn = document.getElementById("es_btn");
+    const btn_findOutMore = document.getElementById("btn_findOutMore");
+    const btn_whatIOffer = document.getElementById("btn_whatIOffer");
+    const btn_myRecentWork = document.getElementById("btn_myRecentWork");
+    const btn_contactMe = document.getElementById("btn_contactMe");
+    const btn_send = document.getElementById("btn_send");
+
+    const title_aboutMe = document.getElementById("title_aboutMe");
+    const title_services = document.getElementById("title_services");
+    const title_whatIOffer = document.getElementById("title_whatIOffer");
+    const title_competencies = document.getElementById("title_competencies");
+    const title_experience = document.getElementById("title_experience");
+    const title_skills = document.getElementById("title_skills");
+    const title_mainTools = document.getElementById("title_mainTools");
+    const title_portfolio = document.getElementById("title_portfolio");
+    const title_recentProyects = document.getElementById("title_recentProyects");
+    const title_contactMe = document.getElementById("title_contactMe");
+    const txt_main = document.getElementById('txt_main');
+    var title_txt = document.getElementById('title_txt');
+  
+    es_btn.addEventListener('click', updateBtn);
+
+    function updateBtn() {
+      if (es_btn.textContent === 'Español') {
+        es_btn.textContent = 'English';
+        btn_findOutMore.textContent = 'Más acerca de mi';
+        btn_whatIOffer.textContent = 'Mis habilidades';
+        btn_myRecentWork.textContent = 'Trabajos recientes';
+        btn_contactMe.textContent = 'Contactáme';
+        btn_send.textContent = 'Enviar';
+        title_aboutMe.innerHTML = 'Sobre Mí';
+        title_services.textContent = 'Servicios';
+        title_whatIOffer.innerHTML = 'Mis Habilidades';
+        title_competencies.textContent = 'Competencias';
+        title_experience.textContent = 'Experiencia';
+        title_skills.textContent = 'Habilidades';
+        title_mainTools.textContent = 'Herramientas';
+        title_portfolio.textContent = 'Portfolio';
+        title_recentProyects.textContent = 'Proyectos Recientes';
+        title_contactMe.textContent = 'Contactáme';
+        txt_main.innerHTML = '<p class="lead mb-5" id="txt_main"> Brindo soluciones Web en entornos Python-Django y Javascript. <br> Abierto a aprender nuevas tecnologías, frameworks y metodologías. Muy motivado y bien organizado. <br>            Puedo escuchar con empatía, hacer diagnósticos, proponer soluciones y llevarlas a cabo. <br> Cómodo trabajando en equipo o de forma independiente. <br>           Apasionado de la tecnología y la programación desde siempre. <br> Actualmente busco un trabajo fijo con un equipo para trabajar en un ambiente Agile. </p>';
+
+        title_txt.textContent = 'Desarrollador Web Backend';
+      } else {
+        es_btn.textContent = 'Español';
+        btn_findOutMore.textContent = 'Find out More';
+        btn_whatIOffer.textContent = 'What I Offer';
+        btn_myRecentWork.textContent = 'My Recent Work';
+        btn_contactMe.textContent = 'Contact Me';
+        btn_send.textContent = 'Send';
+        title_aboutMe.innerHTML = 'About Me';
+        title_services.textContent = 'Services';
+        title_whatIOffer.innerHTML = 'What I Offer';
+        title_competencies.textContent = 'Competencies';
+        title_experience.textContent = 'Experience';
+        title_skills.textContent = 'Skills';
+        title_mainTools.textContent = 'Main Tools';
+        title_portfolio.textContent = 'Portfolio';
+        title_recentProyects.textContent = 'Recent Proyects';
+        title_contactMe.textContent = 'Contact Me';
+        txt_main.innerHTML = '<p class="lead mb-5" id="txt_main">I provide Web solutions in Python-Django and Javascript environments. <br> Open to learn new tecnologies, frameworks and metodologies. Highly motivated and well organised. <br>            I can listen with empathy, make diagnoses, propose solutions and carry them out. <br> Comfortable working as part of a team or independently. <br>            Passionate about technology and programming since always. <br> Currently looking for a permanent job with a team to work in an Agile environment.   </p>';
+
+
+        title_txt.textContent = 'Backend Web Developer';
+      }
+      
+    }
+
+  </script>
 </body>
 
 </html>
