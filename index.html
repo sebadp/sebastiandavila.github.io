@@ -8,7 +8,9 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <!-- FontAwesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -132,10 +134,14 @@
         <h2 class="section-title" data-i18n="proj_title">Featured Projects</h2>
         <div class="projects-grid">
           <div class="project-card glass hover-lift">
+            <div class="project-media-container">
+              <!-- Placeholder for future Video/GIF -->
+            </div>
             <div class="project-content">
-              <h3>Briefly - AI-Powered News Briefings</h3>
-              <p class="project-desc">Autonomous research agent for personalized news curation. Features ReAct-based
-                discovery, Claude/Gemini validation, and smart descriptions.</p>
+              <h3 data-i18n="proj1_title">Briefly</h3>
+              <p class="project-subtitle" data-i18n="proj1_subtitle">AI-Powered News Briefings</p>
+              <p class="project-desc" data-i18n="proj1_desc">Autonomous research agent for personalized news curation.
+                Features ReAct-based discovery, Claude/Gemini validation, and smart descriptions.</p>
               <div class="project-tech">
                 <span>FastAPI</span><span>Next.js 14</span><span>AWS CDK</span><span>Strands</span>
               </div>
@@ -147,10 +153,14 @@
           </div>
 
           <div class="project-card glass hover-lift">
+            <div class="project-media-container">
+              <!-- Placeholder for future Video/GIF -->
+            </div>
             <div class="project-content">
-              <h3>LinkedIn AI Agent</h3>
-              <p class="project-desc">Intelligent job opportunity analysis and enterprise automation. Scrapes messages,
-                scores matches with DSPy, and manages responses.</p>
+              <h3 data-i18n="proj2_title">LinkedIn AI Agent</h3>
+              <p class="project-subtitle" data-i18n="proj2_subtitle">Intelligent Job Analysis & Automation</p>
+              <p class="project-desc" data-i18n="proj2_desc">Scrapes messages, scores matches with DSPy, and manages
+                responses seamlessly.</p>
               <div class="project-tech">
                 <span>DSPy</span><span>Redis</span><span>Playwright</span><span>React</span>
               </div>
@@ -162,10 +172,14 @@
           </div>
 
           <div class="project-card glass hover-lift">
+            <div class="project-media-container">
+              <!-- Placeholder for future Video/GIF -->
+            </div>
             <div class="project-content">
-              <h3>WasAP</h3>
-              <p class="project-desc">Privacy-focused, lightweight local AI Personal Assistant bridging WhatsApp with
-                open-source LLMs (Qwen/Llama) using a custom ReAct engine.</p>
+              <h3 data-i18n="proj3_title">WasAP</h3>
+              <p class="project-subtitle" data-i18n="proj3_subtitle">Local Privacy-First AI Assistant</p>
+              <p class="project-desc" data-i18n="proj3_desc">Lightweight personal assistant bridging WhatsApp with
+                open-source LLMs using a custom ReAct engine.</p>
               <div class="project-tech">
                 <span>Ollama</span><span>Docker</span><span>SQLite</span><span>FastAPI</span>
               </div>
@@ -177,10 +191,14 @@
           </div>
 
           <div class="project-card glass hover-lift">
+            <div class="project-media-container">
+              <!-- Placeholder for future Video/GIF -->
+            </div>
             <div class="project-content">
-              <h3>Postgres AI Agent</h3>
-              <p class="project-desc">Agent to interact with Postgres DB using natural language. LangChain, LangGraph,
-                Streamlit, Ollama.</p>
+              <h3 data-i18n="proj4_title">Postgres AI Agent</h3>
+              <p class="project-subtitle" data-i18n="proj4_subtitle">Natural Language Database Interaction</p>
+              <p class="project-desc" data-i18n="proj4_desc">Agentic layer utilizing LangChain and LangGraph to
+                orchestrate complex data retrieval tasks via natural language.</p>
               <div class="project-tech">
                 <span>LangGraph</span><span>Streamlit</span>
               </div>
@@ -193,10 +211,14 @@
           </div>
 
           <div class="project-card glass hover-lift">
+            <div class="project-media-container">
+              <!-- Placeholder for future Video/GIF -->
+            </div>
             <div class="project-content">
-              <h3>BrewMaestro - Homebrew Tracking</h3>
-              <p class="project-desc">Comprehensive mobile-first brewing management platform for recipe building,
-                fermentation tracking, and analytics.</p>
+              <h3 data-i18n="proj5_title">BrewMaestro</h3>
+              <p class="project-subtitle" data-i18n="proj5_subtitle">Craft Brewing Management Platform</p>
+              <p class="project-desc" data-i18n="proj5_desc">Comprehensive mobile-first app designed for meticulous
+                tracking of recipes, fermentation logs, and ingredient inventories.</p>
               <div class="project-tech">
                 <span>React Native</span><span>FastAPI</span><span>PostgreSQL</span>
               </div>
@@ -209,17 +231,22 @@
           </div>
 
           <div class="project-card glass hover-lift">
+            <div class="project-media-container">
+              <!-- Placeholder for future Video/GIF -->
+            </div>
             <div class="project-content">
-              <h3>ChacraMap</h3>
-              <p class="project-desc">Mapping, tracking, and management tool specifically designed for agricultural
-                lands.</p>
+              <h3 data-i18n="proj6_title">Event-Driven Order Processor</h3>
+              <p class="project-subtitle" data-i18n="proj6_subtitle">Scalable Microservice Architecture</p>
+              <p class="project-desc" data-i18n="proj6_desc">A scalable, event-driven microservice architecture for
+                processing orders in real-time using FastAPI, RabbitMQ, PostgreSQL, and Redis.</p>
               <div class="project-tech">
-                <span>Maps API</span><span>JavaScript</span>
+                <span>FastAPI</span><span>RabbitMQ</span><span>Redis</span><span>K8s</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/sebadp" target="_blank"><i class="fab fa-github"></i> Source</a>
+                <a href="https://github.com/sebadp/FastAPI-RabbitMQ-Event-driven-design" target="_blank"><i
+                    class="fab fa-github"></i> Source</a>
               </div>
-              <button class="read-more-btn" onclick="openModal('proj-chacra')">Read More</button>
+              <button class="read-more-btn" onclick="openModal('proj-order')">Read More</button>
             </div>
           </div>
         </div>
@@ -323,28 +350,33 @@
         title: 'Backend + Gen AI Developer',
         subtitle: 'Trafilea (2025)',
         body: `<ul>
-                 <li>Led enterprise chatbot migration from AWS Bedrock Agents to Strands framework.</li>
-                 <li>Designed multi-agent architecture with specialized agents for different business functions.</li>
-                 <li>Integrated RAG systems with vector databases for context-aware responses.</li>
+                 <li>Designed and delivered an enterprise multi-agent BI chatbot platform from end to end, covering architecture, LLM evaluation, observability, and agentic graph workflows.</li>
+                 <li>Migrated NL-to-SQL BI chatbot from LangGraph to AWS Bedrock + Knowledge Bases (RAG), building department-specific agents (Sales, Logistics, Billing, HR, Support).</li>
+                 <li>Built LLM-as-Judge evaluation pipeline: automated self-improvement loop scoring agent outputs against a Golden Dataset with n8n integration for Data Science review.</li>
+                 <li>Integrated AWS Lambda tools into Bedrock agents for live Redshift queries; used SQS to persist and audit all generated SQL for traceability and debugging.</li>
+                 <li>Implemented SSE (Server-Sent Events) streaming with intermediate tool-use events, providing real-time progress visibility.</li>
+                 <li>Architected agentic graph workflows using Strands for long-running analytical processes with Datadog monitoring.</li>
                </ul>`
       },
       'exp-southern': {
         title: 'Backend Developer',
         subtitle: 'Southern Code (2023-2024)',
         body: `<ul>
-                 <li>Developed high-performance microservices with FastAPI and Aiohttp.</li>
-                 <li>Migrated monolithic system to microservices (Python 3.11 + FastAPI).</li>
-                 <li>Implemented distributed tracing with Jaeger/OpenTelemetry reducing MTTR by 40%.</li>
-                 <li>Maintained multi-version Python environments (2.7 ↔ 3.11).</li>
+                 <li>Integrated new features into the Pricing Engine Microservice using FastAPI, Pydantic, and Aiohttp.</li>
+                 <li>Refactored core availability logic and improved search performance with Django and DRF.</li>
+                 <li>Maintained microservices and monolithic applications; managed scheduled tasks with Celery and inter-service communication via RabbitMQ.</li>
+                 <li>Implemented distributed tracing and performance monitoring with Jaeger, OpenTelemetry, Grafana, and Skooner.</li>
+                 <li>Conducted code reviews and automated testing with Unittest and DDT.</li>
                </ul>`
       },
       'exp-intive': {
         title: 'Backend Developer',
         subtitle: 'Intive (2021-2023)',
         body: `<ul>
-                 <li>Integrated 15+ third-party APIs maintaining 99.9% uptime.</li>
-                 <li>Optimized Django queries improving search performance by 60%.</li>
-                 <li>Managed 100GB+/day logs with SumoLogic at scale.</li>
+                 <li>Led migration from Vagrant to Docker for local development environment; enhanced scalability in Azure with Docker Compose and Bash (Dante project).</li>
+                 <li>Integrated REST and SOAP third-party APIs; managed production environments with Linux/Docker.</li>
+                 <li>Supported multi-version Python (2.7, 3.10) with AWS S3 via Boto3 (Shippo project).</li>
+                 <li>Managed production logs and alerts with SumoLogic.</li>
                </ul>`
       },
       'proj-briefly': {
@@ -393,48 +425,52 @@
                <p style="margin-top: 1rem;"><strong>Built as:</strong> Technical challenge showcasing enterprise architecture</p>`
       },
       'proj-wasap': {
-        title: 'WasAP',
-        subtitle: 'Local AI Personal Assistant',
-        body: `<p>Privacy-focused, zero-cost conversational assistant running entirely on local hardware, bridging WhatsApp with open-source LLMs via Ollama.</p>
+        title: 'WasAP - Local AI Personal Assistant',
+        subtitle: 'Privacy-focused AI bridging WhatsApp with open-source LLMs',
+        body: `<p>A zero-cost conversational assistant running entirely on local hardware, connecting WhatsApp with open-source LLMs (Qwen, Llama) via Ollama.</p>
+               <h4 style="color: var(--text-main); margin: 1.5rem 0 0.5rem 0;">Technical Highlights:</h4>
                <ul>
-                 <li>Engineered a custom tool-execution engine (ReAct loop) to plan actions and execute skills (Weather, Notes, Calculator).</li>
-                 <li>Fully Dockerized microservices stack orchestrating FastAPI, Ollama, and SQLite.</li>
-                 <li>Implemented offline speech-to-text (Faster-Whisper) and computer vision (Llava).</li>
-                 <li>Persistent dual-layer memory system (SQLite + Markdown).</li>
-                 <li>Robust webhook handling with cryptographic signature validation.</li>
+                 <li><strong>Agentic Architecture:</strong> Engineered a custom ReAct tool-execution engine to autonomously plan actions and execute skills (Weather, Notes, Calculator).</li>
+                 <li><strong>Local Infrastructure:</strong> Fully Dockerized microservices stack orchestrating FastAPI, Ollama (with GPU acceleration), and SQLite.</li>
+                 <li><strong>Multimodal & Memory:</strong> Implemented offline local speech-to-text (Faster-Whisper), computer vision (Llava), and a dual-layer memory system (SQLite + Markdown).</li>
+                 <li><strong>Reliability Engineering:</strong> Robust webhook handling with cryptographic signature validation (HMAC-SHA256) and atomic message deduplication.</li>
                </ul>`
       },
       'proj-postgres': {
         title: 'Postgres AI Agent',
-        subtitle: 'Natural language DB interaction',
-        body: `<p>An advanced agentic setup to retrieve and analyze data directly from a PostgreSQL database using plain English queries.</p>
+        subtitle: 'Natural language Database Interaction',
+        body: `<p>An advanced agentic setup that retrieves and analyzes data directly from a PostgreSQL database using plain English queries, inspired by enterprise Text-to-SQL architecture.</p>
+               <h4 style="color: var(--text-main); margin: 1.5rem 0 0.5rem 0;">Features:</h4>
                <ul>
-                 <li>Leverages LangChain and LangGraph for orchestrating LLM chains.</li>
+                 <li>Leverages LangChain and LangGraph for orchestrating multi-step LLM chains and dynamic SQL generation.</li>
                  <li>Beautifully wrapped in a Streamlit frontend interface.</li>
-                 <li>Supports fully local and private LLM models via Ollama.</li>
+                 <li>Fully integrates with local and private LLM models via Ollama.</li>
                </ul>`
       },
       'proj-brew': {
         title: 'BrewMaestro - Homebrew Tracking App',
         subtitle: 'Comprehensive brewing management platform',
-        body: `<p>Mobile-first application for homebrewers to manage recipes, track fermentation, and analyze brewing sessions.</p>
+        body: `<p>Mobile-first application for homebrewers to meticulously manage recipes, track fermentation, and analyze brewing sessions.</p>
                <h4 style="color: var(--text-main); margin: 1.5rem 0 0.5rem 0;">Features:</h4>
                <ul>
-                 <li>Recipe builder with grain bills, hop schedules, and calculations.</li>
-                 <li>Fermentation tracking with temperature/gravity logging.</li>
+                 <li>Recipe builder with grain bills, hop schedules, and ABV calculations.</li>
+                 <li>Fermentation tracking with precise temperature/gravity logging.</li>
                  <li>400+ ingredient database (malts, hops, yeasts).</li>
-                 <li>Brewing analytics and efficiency tracking.</li>
-                 <li>Offline-first architecture.</li>
+                 <li>Brewing analytics and session efficiency tracking.</li>
+                 <li>Built with React Native, TypeScript, FastAPI, PostgreSQL, and AWS S3 cache.</li>
                </ul>
                <p style="margin-top: 1rem;"><strong>Status:</strong> 🚧 In Development • Beta release Q2 2025</p>`
       },
-      'proj-chacra': {
-        title: 'ChacraMap',
-        subtitle: 'Agricultural land mapping',
-        body: `<p>Mapping, tracking, and management tool specifically designed for agricultural lands and farm management.</p>
+      'proj-order': {
+        title: 'Event-Driven Order Processor',
+        subtitle: 'Scalable Microservice Architecture',
+        body: `<p>A highly scalable, event-driven microservice architecture dedicated to processing orders in real-time, designed for cloud-native Kubernetes environments.</p>
+               <h4 style="color: var(--text-main); margin: 1.5rem 0 0.5rem 0;">Technical Highlights:</h4>
                <ul>
-                 <li>Interactive maps visualization using Maps API.</li>
-                 <li>Client-side scripting with modern JavaScript.</li>
+                 <li>Built entirely on FastAPI to handle high-throughput async requests.</li>
+                 <li>Leverages RabbitMQ as the central message broker to decouple services and ensure event delivery.</li>
+                 <li>Utilizes PostgreSQL for persistent state and Redis for lightning-fast caching and pub/sub signaling.</li>
+                 <li>Kubernetes-ready manifests for container orchestration and automated horizontal scaling.</li>
                </ul>`
       }
     };
@@ -449,28 +485,33 @@
         title: 'Desarrollador Backend + IA Generativa',
         subtitle: 'Trafilea (2025)',
         body: `<ul>
-                 <li>Lideré la migración del chatbot corporativo desde AWS Bedrock Agents al framework Strands.</li>
-                 <li>Diseñé arquitectura multi-agente con agentes especializados por funciones de negocio.</li>
-                 <li>Integré sistemas RAG con bases de datos vectoriales para respuestas estructuradas por contexto.</li>
+                 <li>Diseñé y entregué una plataforma empresarial de chatbot BI multi-agente de extremo a extremo, abarcando arquitectura, evaluación de LLMs, observabilidad y flujos de trabajo basados en grafos agentic.</li>
+                 <li>Migré el chatbot BI de NL-to-SQL desde LangGraph hacia AWS Bedrock + Knowledge Bases (RAG), construyendo agentes específicos por rama (Ventas, Logística, Facturación, RRHH, Soporte).</li>
+                 <li>Construí un pipeline de evaluación LLM-as-Judge con loop de auto-mejora para calificar salidas frente a un Golden Dataset y generar PRs automáticos vía n8n para revisión.</li>
+                 <li>Integré herramientas de AWS Lambda en agentes de Bedrock para consultas en vivo a Redshift; utilicé SQS para persistir y auditar SQL generado para trazabilidad.</li>
+                 <li>Implementé streaming SSE (Server-Sent Events) con eventos intermedios para visibilidad en tiempo real del progreso de razonamiento multi-paso.</li>
+                 <li>Diseñé flujos de trabajo agentic usando el framework Strands para procesos analíticos largos con monitoreo end-to-end en Datadog.</li>
                </ul>`
       },
       'exp-southern': {
         title: 'Desarrollador Backend',
         subtitle: 'Southern Code (2023-2024)',
         body: `<ul>
-                 <li>Desarrollé microservicios de alto rendimiento con FastAPI y Aiohttp.</li>
-                 <li>Migré un sistema monolítico a microservicios en Python 3.11.</li>
-                 <li>Implementé trazabilidad distribuida con Jaeger/OpenTelemetry reduciendo MTTR en 40%.</li>
-                 <li>Mantenimiento de entornos Python multi-versión (2.7 ↔ 3.11).</li>
+                 <li>Integré nuevas funcionalidades al microservicio de Pricing Engine usando FastAPI, Pydantic, y Aiohttp.</li>
+                 <li>Refactoricé la lógica central de disponibilidad y mejoré el rendimiento de búsqueda con Django y DRF.</li>
+                 <li>Mantuve aplicaciones monolíticas y de microservicios; gestioné tareas programadas con Celery y comunicación entre servicios vía RabbitMQ.</li>
+                 <li>Implementé trazabilidad distribuida y monitoreo de rendimiento con Jaeger, OpenTelemetry, Grafana, y Skooner.</li>
+                 <li>Realicé revisiones de código y pruebas automatizadas con Unittest y DDT.</li>
                </ul>`
       },
       'exp-intive': {
         title: 'Desarrollador Backend',
         subtitle: 'Intive (2021-2023)',
         body: `<ul>
-                 <li>Integré más de 15 APIs de terceros manteniendo un uptime de 99.9%.</li>
-                 <li>Optimicé consultas de Django mejorando el rendimiento de búsquedas en 60%.</li>
-                 <li>Administré logs a gran escala (100GB+/día) con SumoLogic.</li>
+                 <li>Lideré la migración de Vagrant a Docker para el entorno local; mejoré la escalabilidad en Azure con Docker Compose y Bash (Proyecto Dante).</li>
+                 <li>Integré APIs de terceros REST y SOAP; administré entornos de producción con Linux/Docker.</li>
+                 <li>Di soporte a entornos Python multi-versión (2.7, 3.10) con AWS S3 vía Boto3 (Proyecto Shippo).</li>
+                 <li>Administré logs de producción y alertas con SumoLogic.</li>
                </ul>`
       },
       'proj-briefly': {
@@ -519,48 +560,52 @@
                <p style="margin-top: 1rem;"><strong>Creado como:</strong> Reto técnico de arquitectura a nivel enterprise</p>`
       },
       'proj-wasap': {
-        title: 'WasAP',
-        subtitle: 'Asistente Personal IA Local',
-        body: `<p>Asistente conversacional de costo cero enfocado en la privacidad, que une WhatsApp con LLMs open-source mediante Ollama.</p>
+        title: 'WasAP - Asistente IA Local',
+        subtitle: 'IA privada uniendo WhatsApp y LLMs Open-Source',
+        body: `<p>Un asistente conversacional de costo cero que se ejecuta íntegramente en hardware local, conectando WhatsApp con LLMs abiertos (Qwen, Llama) a través de Ollama.</p>
+               <h4 style="color: var(--text-main); margin: 1.5rem 0 0.5rem 0;">Destacados Técnicos:</h4>
                <ul>
-                 <li>Diseñé un motor de ejecución (ReAct loop) para planear acciones y habilidades (Clima, Notas).</li>
-                 <li>Stack Dockerizado orquestando FastAPI, Ollama, y SQLite.</li>
-                 <li>Integración local de voz (Faster-Whisper) y visión computarizada (Llava).</li>
-                 <li>Memoria dual persistente (SQLite + Markdown).</li>
-                 <li>Manejo robusto de webhooks y validación criptográfica.</li>
+                 <li><strong>Arquitectura Agentic:</strong> Desarrollé un motor de ejecución ReAct personalizado para planear acciones y ejecutar habilidades (Clima, Notas).</li>
+                 <li><strong>Infraestructura Local:</strong> Stack de microservicios Dockerizados orquestando FastAPI, Ollama (acelerado por GPU) y SQLite.</li>
+                 <li><strong>Multimodal y Memoria:</strong> Integración local de voz (Faster-Whisper), visión (Llava), y un sistema dual de memoria a largo plazo.</li>
+                 <li><strong>Ingeniería de Fiabilidad:</strong> Manejo robusto de webhooks con validación criptográfica (HMAC-SHA256) y de-duplicación atómica.</li>
                </ul>`
       },
       'proj-postgres': {
         title: 'Agente de IA para Postgres',
-        subtitle: 'Interacción natural de Base de Datos',
-        body: `<p>Interacción avanzada mediante agentes para obtener y analizar información en PostgreSQL usando lenguaje natural.</p>
+        subtitle: 'Interacción de Base de Datos con Lenguaje Natural',
+        body: `<p>Configuración avanzada de agentes que recupera y analiza datos directamente desde PostgreSQL utilizando consultas en lenguaje natural, inspirado en arquitecturas Text-to-SQL corporativas.</p>
+               <h4 style="color: var(--text-main); margin: 1.5rem 0 0.5rem 0;">Características:</h4>
                <ul>
-                 <li>Utiliza LangChain y LangGraph para la orquestación de cadenas LLM.</li>
-                 <li>Presentado con una hermosa interfaz en Streamlit.</li>
-                 <li>Soporte para LLMs completamente locales vía Ollama.</li>
+                 <li>Utiliza LangChain y LangGraph para orquestar llamadas multi-paso y generación SQL dinámica.</li>
+                 <li>Interfaz frontend interactiva empaquetada con Streamlit.</li>
+                 <li>Soporte 100% privado y local para modelos vía Ollama.</li>
                </ul>`
       },
       'proj-brew': {
         title: 'BrewMaestro',
-        subtitle: 'Plataforma para Cerveceros Artesanales',
-        body: `<p>Aplicación mobile-first para administrar recetas, controlar la fermentación y analizar las sesiones de preparado.</p>
+        subtitle: 'Plataforma integral para Cerveceros Artesanales',
+        body: `<p>Aplicación mobile-first diseñada para administrar recetas, controlar la fermentación y analizar detalladamente las sesiones de preparado.</p>
                <h4 style="color: var(--text-main); margin: 1.5rem 0 0.5rem 0;">Características:</h4>
                <ul>
-                 <li>Constructor de recetas con registro de cereales y lúpulo.</li>
-                 <li>Seguimiento de fermentación (logs de temperatura/gravedad).</li>
-                 <li>Base de datos de +400 ingredientes (Maltas, Lúpulos, Levaduras).</li>
-                 <li>Analíticas de sesión y seguimiento de eficiencia.</li>
-                 <li>Arquitectura Offline-first.</li>
+                 <li>Constructor de recetas con registro de cereales, lúpulo y cálculos de ABV.</li>
+                 <li>Seguimiento de fermentación (logs manuales de temperatura/gravedad).</li>
+                 <li>Base de datos integrada de +400 ingredientes (Maltas, Lúpulos, Levaduras).</li>
+                 <li>Analíticas de la sesión y seguimiento de eficiencia térmica y de extracción.</li>
+                 <li>Stack: React Native, TypeScript, FastAPI, PostgreSQL y AWS S3.</li>
                </ul>
                <p style="margin-top: 1rem;"><strong>Estado:</strong> 🚧 En Desarrollo • Lanzamiento Beta Q2 2025</p>`
       },
-      'proj-chacra': {
-        title: 'ChacraMap',
-        subtitle: 'Mapeo de zonas agrícolas',
-        body: `<p>Herramienta diseñada para el control y mapeo de terrenos agrícolas en chacras y administración de fincas.</p>
+      'proj-order': {
+        title: 'Procesador de Órdenes por Eventos',
+        subtitle: 'Arquitectura Escalable de Microservicios',
+        body: `<p>Una arquitectura de microservicios altamente escalable orientada a eventos para procesar pedidos en tiempo real, diseñada para entornos nativos en la nube con Kubernetes.</p>
+               <h4 style="color: var(--text-main); margin: 1.5rem 0 0.5rem 0;">Destacados Técnicos:</h4>
                <ul>
-                 <li>Visualización de mapas interactivos vía Maps API.</li>
-                 <li>Scripting del lado del cliente con JavaScript moderno.</li>
+                 <li>Construido con FastAPI para manejar un alto volumen de peticiones asíncronas.</li>
+                 <li>Utiliza RabbitMQ como message broker central para desacoplar sistemas y asegurar la entrega.</li>
+                 <li>Integra PostgreSQL para estado persistente y Redis para caché ultra-rápido.</li>
+                 <li>Manifiestos preparados para Kubernetes para orquestación y escalado automático horizontal.</li>
                </ul>`
       }
     };
@@ -621,6 +666,24 @@
         exp_role2: "Backend Developer",
         exp_role3: "Backend Developer",
         proj_title: "Featured Projects",
+        proj1_title: "Briefly",
+        proj1_subtitle: "AI-Powered News Briefings",
+        proj1_desc: "Autonomous research agent for personalized news curation. Features ReAct-based discovery, Claude/Gemini validation, and smart descriptions.",
+        proj2_title: "LinkedIn AI Agent",
+        proj2_subtitle: "Intelligent Job Analysis & Automation",
+        proj2_desc: "Scrapes messages, scores matches with DSPy, and manages responses seamlessly.",
+        proj3_title: "WasAP",
+        proj3_subtitle: "Local Privacy-First AI Assistant",
+        proj3_desc: "Lightweight personal assistant bridging WhatsApp with open-source LLMs using a custom ReAct engine.",
+        proj4_title: "Postgres AI Agent",
+        proj4_subtitle: "Natural Language Database Interaction",
+        proj4_desc: "Agentic layer utilizing LangChain and LangGraph to orchestrate complex data retrieval tasks via natural language.",
+        proj5_title: "BrewMaestro",
+        proj5_subtitle: "Craft Brewing Management Platform",
+        proj5_desc: "Comprehensive mobile-first app designed for meticulous tracking of recipes, fermentation logs, and ingredient inventories.",
+        proj6_title: "Event-Driven Order Processor",
+        proj6_subtitle: "Scalable Microservice Architecture",
+        proj6_desc: "A scalable, event-driven microservice architecture for processing orders in real-time using FastAPI, RabbitMQ, PostgreSQL, and Redis.",
         contact_title: "Get In Touch",
         contact_subtitle: "Let's build something great.",
         contact_desc: "I'm always open to discussing new opportunities, architecture challenges, or Agentic AI systems.",
@@ -651,6 +714,24 @@
         exp_role2: "Desarrollador Backend",
         exp_role3: "Desarrollador Backend",
         proj_title: "Proyectos Destacados",
+        proj1_title: "Briefly",
+        proj1_subtitle: "Noticias Potenciadas por IA",
+        proj1_desc: "Agente autónomo investigador para curaduría de noticias. Busca con ReAct, valida con Claude/Gemini y genera descripciones.",
+        proj2_title: "LinkedIn AI Agent",
+        proj2_subtitle: "Análisis y Automatización de Empleos",
+        proj2_desc: "Extrae mensajes, califica coincidencias con DSPy y gestiona respuestas de reclutadores impecablemente.",
+        proj3_title: "WasAP",
+        proj3_subtitle: "Asistente IA Local Privado",
+        proj3_desc: "Asistente ligero que conecta WhatsApp con LLMs de código abierto (Qwen/Llama) usando un motor ReAct personalizado.",
+        proj4_title: "Postgres AI Agent",
+        proj4_subtitle: "Interacción Natural con Datos",
+        proj4_desc: "Capa de agentes usando LangChain y LangGraph para orquestar consultas complejas SQL vía lenguaje natural.",
+        proj5_title: "BrewMaestro",
+        proj5_subtitle: "Plataforma para Cerveceros Artesanales",
+        proj5_desc: "App nativa diseñada para el registro detallado de recetas, control de fermentación y gestión de ingredientes.",
+        proj6_title: "Procesador de Órdenes (Event-Driven)",
+        proj6_subtitle: "Arquitectura de Microservicios Escalable",
+        proj6_desc: "Arquitectura de microservicios escalable orientada a eventos para procesar pedidos en tiempo real con FastAPI, RabbitMQ y Redis.",
         contact_title: "Contacto",
         contact_subtitle: "Construyamos algo genial.",
         contact_desc: "Siempre estoy abierto a discutir nuevas oportunidades, retos de arquitectura o sistemas de IA con agentes.",
